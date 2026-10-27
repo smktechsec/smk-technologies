@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)"/>
+  <rect width="62" height="62" x="1" y="1" rx="13" fill="none" stroke="rgba(14, 165, 233, 0.3)" stroke-width="1"/>
+  <!-- Security Shield Outer -->
+  <path d="M32 10 L48 16 V28 C48 39 32 50 32 50 C32 50 16 39 16 28 V16 Z" 
+        fill="none" stroke="url(#shieldGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <!-- Circuit node & core -->
+  <circle cx="32" cy="27" r="5" fill="#0ea5e9"/>
+  <path d="M32 19 V22 M32 32 V38 M25 27 H22 M39 27 H42" 
+        stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  <!-- Pulse Dot -->
+  <circle cx="32" cy="27" r="2" fill="#ffffff"/>
+</svg>

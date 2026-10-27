@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smktechsec.github.io/smk-technologies/sitemap.xml
