@@ -1654,6 +1654,95 @@
 
       </div>
 
+      <!-- ======================================================================
+           LIVE VISITOR STATISTICS SECTION
+           ====================================================================== -->
+      <section class="footer-stats-section" aria-label="Live Visitor Statistics">
+        <div class="footer-stats-header">
+          <div class="footer-stats-title-wrap">
+            <span class="live-pulse-indicator" aria-hidden="true">
+              <span class="pulse-ring"></span>
+              <span class="pulse-core"></span>
+            </span>
+            <h4 class="footer-stats-title">Live Visitor Statistics</h4>
+            <span class="footer-stats-badge" id="visitor-stats-badge">PKT (UTC+5)</span>
+          </div>
+          <div class="footer-stats-sync sync-connecting" id="visitor-stats-sync-status">
+            <span class="sync-dot"></span>
+            <span>Connecting...</span>
+          </div>
+        </div>
+
+        <div class="footer-stats-grid">
+          <!-- Total Visitors -->
+          <div class="footer-stat-card" id="stat-card-total-visitors">
+            <div class="footer-stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="footer-stat-details">
+              <div class="footer-stat-value stat-loading" id="val-total-visitors">--</div>
+              <div class="footer-stat-label">Total Visitors</div>
+            </div>
+          </div>
+
+          <!-- Today's Visitors -->
+          <div class="footer-stat-card" id="stat-card-today-visitors">
+            <div class="footer-stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="footer-stat-details">
+              <div class="footer-stat-value stat-loading" id="val-today-visitors">--</div>
+              <div class="footer-stat-label">Today's Visitors</div>
+            </div>
+          </div>
+
+          <!-- Online Visitors -->
+          <div class="footer-stat-card stat-card-online" id="stat-card-online-visitors">
+            <div class="footer-stat-icon-wrap icon-online" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <div class="footer-stat-details">
+              <div class="footer-stat-value-online-wrap">
+                <div class="footer-stat-value stat-loading" id="val-online-visitors">--</div>
+                <span class="online-indicator-pill" title="Strict 10s Activity Window">Active</span>
+              </div>
+              <div class="footer-stat-label">Online Visitors</div>
+            </div>
+          </div>
+
+          <!-- Total Page Views -->
+          <div class="footer-stat-card" id="stat-card-page-views">
+            <div class="footer-stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="footer-stat-details">
+              <div class="footer-stat-value stat-loading" id="val-page-views">--</div>
+              <div class="footer-stat-label">Total Page Views</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-stats-footnote" id="visitor-stats-footnote">
+          Zero-setup live counter powered by CountAPI &amp; browser local storage. Synchronized in Pakistan Standard Time (PKT).
+        </div>
+      </section>
+
       <!-- Footer Bottom & Mandatory Copyright Credit -->
       <div class="footer-bottom">
         <div>
@@ -1726,5 +1815,9 @@
 
   <!-- Main JavaScript File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Visitor Counter Configuration & Engine -->
+  <script src="assets/js/visitor-counter-config.js"></script>
+  <script src="assets/js/visitor-counter.js"></script>
 </body>
 </html>

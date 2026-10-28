@@ -1,0 +1,9 @@
+# Raw reference files from original folder
+/[0-9]*.png
+/[0-9]*.jpg
+/[0-9]*.jpeg
+/[0-9]*.mp4
+/Image *.jpeg
+/Prompt For Smk.txt
+.DS_Store
+Thumbs.db
